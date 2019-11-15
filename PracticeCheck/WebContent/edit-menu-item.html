@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<title>edit menu item</title>
+<script src="js\validate.js"> </script>
+<link rel="stylesheet" href="style\styleyum.css">
+<style>
+.body-main th{
+	text-align: left;
+}
+.body-main td{
+	text-align: left;
+}
+</style>
+</head>
+<body>
+<header class="header container-fluid">
+<h1 class="header-itemleft">truYum</h1>
+<img class="header-img" src="images\truyum.jfif" >
+<a class="header-itemright" href="menu-item-list-admin.html">Menu</a>
+</header>
+<section class="body-main">
+<h1 class="header-itemleft">Edit Menu Item<h1>
+<form name="editMenuform" action="#" onsubmit="return ValidateMenuItemForm()" method="post">
+<table style="width: 100%">
+<tr><th colspan="4"><label for="mname">Name:</th></tr><br>
+<tr><td colspan="4"><input type="text" name="mname" id="mname" style="width: 75%"></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><th><label for="mprice">Price:</th>
+<th><label for="mlist">Active</th>
+<th><label for="mdate">Date of Launch:</th>
+<th><label for="mcategory">Category:</th></tr>
+<tr>
+<td><input type="text" id="mprice" name="price"></td>
+<td><input type="radio" name="availability" value="Yes" style="font-size: 20px">Yes 
+    <input type="radio" name="availability" value="No" style="font-size: 20px">No</td>
+<td><input type="date" name="date" id="mlist"></td>
+<td><input list="List" name="namevish" id="mdate">
+    <datalist id="List">
+    <option value="Starters">
+    <option value="Main Course">
+    <option value="Dessert">
+    <option value="Drinks">
+</datalist></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td><input type="checkbox" id="mcategory" name="Free Delivery" checked>
+<label>Free Delivery</label></td>
+</tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td><a href="edit-menu-item-status.html"><input type="submit" class="button" value="Save"></a></td></tr>
+</form>
+</table>
+</section>
+<div class ="footer">
+<p>Copyright©2019</p>
+</div>
+</body>
+</html>
